@@ -5,9 +5,9 @@ import plotly.express as px
 
 st.set_page_config(page_title="NYSE Screener (CSV-only)", layout="wide")
 st.title("NYSE Screener (CSV-only)")
-st.caption("Reads nyse_finnhub_financials_sectors.csv offline. No live API calls.")
+st.caption("Reads nyse_finnhub_financials.csv offline. No live API calls.")
 
-CSV_PATH = "nyse_finnhub_financials_sectors.csv"
+CSV_PATH = "nyse_finnhub_financials.csv"
 
 # -------------------- Helpers --------------------
 @st.cache_data(ttl=60 * 60)
